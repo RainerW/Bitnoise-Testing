@@ -4,7 +4,14 @@
 	<groupId>de.bitnoise.testing</groupId>
 	<artifactId>bn-testing</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
 	<name>Test helper classes</name>
+
+	<ciManagement>
+		<system>Jenkins</system>
+		<url>http://bitnoise.de/jenkins/job/Bitnoise-Testing/</url>
+	</ciManagement>
 
 	<build>
 		<plugins>
@@ -19,12 +26,15 @@
 			</plugin>
 		</plugins>
 	</build>
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.10</version>
-			<scope>provided</scope>
-		</dependency>
-	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.10</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 </project>
