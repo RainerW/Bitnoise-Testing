@@ -4,7 +4,10 @@
 	<groupId>de.bitnoise.testing</groupId>
 	<artifactId>bn-testing</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+    <modules>
+        <module>bn-testing-db</module>
+    </modules>
+    <packaging>pom</packaging>
 
 	<name>Test helper classes</name>
 
