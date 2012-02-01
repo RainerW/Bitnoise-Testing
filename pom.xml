@@ -6,6 +6,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>bn-testing-db</module>
+        <module>bn-testing-common</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -27,6 +28,14 @@
                     <target>1.6</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <configuration>
+                    <useProjectReferences>true</useProjectReferences>
+                    <downloadSources>true</downloadSources>
+                </configuration>
+             </plugin>
         </plugins>
     </build>
 
