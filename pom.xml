@@ -56,4 +56,17 @@
 
     <dependencies>
     </dependencies>
+    <profiles>
+    <profile>
+      <id>DeployRepo</id>
+      <distributionManagement>
+        <repository>
+          <id>autodeployRepository</id>
+          <name>Jenkins-Slave autodeploy repository</name>
+          <url>file:///var/www/repo.bitnoise.de/artifacts/release</url>
+          <uniqueVersion>true</uniqueVersion>
+        </repository>
+      </distributionManagement>
+    </profile>
+ </profiles>
 </project>
