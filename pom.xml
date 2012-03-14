@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.bitnoise.testing</groupId>
     <artifactId>bn-testing</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <modules>
         <module>bn-testing-db</module>
         <module>bn-testing-common</module>
